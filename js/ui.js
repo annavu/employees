@@ -1,13 +1,12 @@
 class UI {
-  // constructor() {
+  
 
-  // }
 
   show(data) {
     // const ul = document.createElement('ul');
     //   document.body.appendChild(ul);
 
-      const rows = [];
+      // const rows = [];
       const list = document.querySelector(".employees-list");
       data.forEach(function(employer) {
         const row = document.createElement("tr");
@@ -22,7 +21,7 @@ class UI {
         `;
       
         list.appendChild(row);
-        rows.push(row);
+        // rows.push(row);
         
       })
       
