@@ -55,6 +55,10 @@ document.addEventListener("DOMContentLoaded", loadEmployees);
 
 const employees = new Employees();
 const ui = new UI();
+const filter = new Filter();
+const select = document.querySelector('.filter');
+
+
 
 function loadEmployees() {
   employees.getEmployees().then(function(response) {
@@ -62,3 +66,9 @@ function loadEmployees() {
     ui.show(response);
   })
 }
+
+
+select.addEventListener('change', filter.change)
+
+
+
