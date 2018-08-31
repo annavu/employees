@@ -19,15 +19,15 @@
     <input class="input input-note" type="text" placeholder="Search for note..">
     <input type="date" class="datepicker" id="" placeholder="Search for date..." >
     <br><br>
-    <input class="input input-id" type="text" placeholder="enter your search.." >
+    <input class="input input-search" type="text" placeholder="enter your search.." >
     <select class="filter">
-      <option value="">all</option>
-      <option value="">ID</option>
-      <option value="">first name</option>
-      <option value="">last name</option>
-      <option value="">company</option>
-      <option value="">note</option>
-      <option value="">date</option>
+      <option class="option" value=""></option>
+      <option class="option" value="id">ID</option>
+      <option class="option" value="firstName">first name</option>
+      <option class="option" value="lastName">last name</option>
+      <option class="option" value="date">date</option>
+      <option class="option" value="company">company</option>
+      <option class="option" value="note">note</option>
             
     </select>
    
@@ -46,9 +46,10 @@
       <tbody class="employees-list"></tbody>
     </table>
   </div>
-
-  <script src="js/ui.js"></script>
   <script src="js/employees.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/ui.js"></script>
+  <!-- <script src="js/employees.js"></script> -->
   <script src="js/main.js"></script>
   
 </body>
